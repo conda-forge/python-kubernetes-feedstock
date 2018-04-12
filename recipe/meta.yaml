@@ -1,4 +1,4 @@
-{% set version = "2.0.0" %}
+{% set version = "6.0.0" %}
 
 package:
   name: python-kubernetes
@@ -7,7 +7,7 @@ package:
 source:
   fn: python-kubernetes-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/k/kubernetes/kubernetes-{{ version }}.tar.gz 
-  sha256: 3fa1a50330f0da9d9ba1cd8cc425df481e0326136899875db9448913246f2753
+  sha256: b370ab4abd925309db69a14a4723487948e9a83de60ca92782ec14992b741c89
 
 build:
   script: python setup.py install --single-version-externally-managed --record record.txt
