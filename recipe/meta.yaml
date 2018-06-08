@@ -1,4 +1,4 @@
-{% set version = "4.0.0" %}
+{% set version = "6.0.0" %}
 
 package:
   name: python-kubernetes
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/k/kubernetes/kubernetes-{{ version }}.tar.gz 
-  sha256: 0719574646914242d653292da316ebde99131cbc388cd7c0d097268d7b0880f5
+  sha256: b370ab4abd925309db69a14a4723487948e9a83de60ca92782ec14992b741c89
 
 build:
-  number: 1
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
@@ -26,7 +26,7 @@ requirements:
     - pyyaml >=3.12
     - google-auth >=1.0.1
     - ipaddress >=1.0.17  # [py<33]
-    - websocket-client >=0.32.0,<=0.40.0
+    - websocket-client >=0.32.0,!=0.40.0,!=0.41.*,!=0.42.*
     - requests
     - requests-oauthlib
 
