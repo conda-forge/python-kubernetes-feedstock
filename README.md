@@ -3,7 +3,7 @@ About python-kubernetes
 
 Home: https://github.com/kubernetes-incubator/client-python
 
-Package license: Apache 2.0
+Package license: Apache-2.0
 
 Feedstock license: BSD 3-Clause
 
@@ -14,14 +14,16 @@ Summary: The official Kubernetes python client.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/python-kubernetes-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/python-kubernetes-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/python-kubernetes-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/python-kubernetes-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/python-kubernetes-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/python-kubernetes-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/python-kubernetes-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/python-kubernetes-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/python-kubernetes-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/python-kubernetes-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/python-kubernetes-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/python-kubernetes-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/python-kubernetes/badges/version.svg)](https://anaconda.org/conda-forge/python-kubernetes)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/python-kubernetes/badges/downloads.svg)](https://anaconda.org/conda-forge/python-kubernetes)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-python--kubernetes-green.svg)](https://anaconda.org/conda-forge/python-kubernetes) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/python-kubernetes.svg)](https://anaconda.org/conda-forge/python-kubernetes) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/python-kubernetes.svg)](https://anaconda.org/conda-forge/python-kubernetes) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/python-kubernetes.svg)](https://anaconda.org/conda-forge/python-kubernetes) |
 
 Installing python-kubernetes
 ============================
@@ -66,6 +68,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
