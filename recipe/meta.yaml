@@ -29,6 +29,7 @@ requirements:
     - websocket-client >=0.32.0,!=0.40.0,!=0.41.*,!=0.42.*
     - requests
     - requests-oauthlib
+    - adal >=1.0.2
 
 test:
   imports:
