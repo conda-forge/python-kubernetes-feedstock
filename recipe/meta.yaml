@@ -1,4 +1,4 @@
-{% set version = "7.0.0" %}
+{% set version = "8.0.0" %}
 
 package:
   name: python-kubernetes
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/k/kubernetes/kubernetes-{{ version }}.tar.gz 
-  sha256: 84dfb4319afac189e8327b71b9332b5329d2a78074f58958c5f06a870edf32ba
+  sha256: 54f8e7bb1dd9a55cf416dff76a63c4ae441764280942d9913f2243676f29d02c
 
 build:
   number: 1000
