@@ -10,7 +10,7 @@ source:
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv"
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   build:
@@ -22,10 +22,10 @@ requirements:
     - six >=1.9.0
     - python-dateutil >=2.5.3
     - setuptools >=21.0.0
-    - urllib3 >=1.19.1,!=1.21
+    - urllib3 >=1.23
     - pyyaml >=3.12
     - google-auth >=1.0.1
-    - ipaddress >=1.0.17  # [py<33]
+    - ipaddress >=1.0.17  # [py27]
     - websocket-client >=0.32.0,!=0.40.0,!=0.41.*,!=0.42.*
     - requests
     - requests-oauthlib
