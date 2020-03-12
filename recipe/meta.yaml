@@ -1,16 +1,16 @@
-{% set version = "10.0.1" %}
+{% set version = "10.1.0" %}
 
 package:
   name: python-kubernetes
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/k/kubernetes/kubernetes-{{ version }}.tar.gz 
-  sha256: 3770a496663396ad1def665eeadb947b3f45217a08b64b10c01a57e981ac8592
+  url: https://pypi.io/packages/source/k/kubernetes/kubernetes-{{ version }}.tar.gz
+  sha256: 85a767d04f17d6d317374b6c35e09eb168a6bfd9276f0b3177cc206376bad968
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
@@ -39,11 +39,11 @@ test:
     - kubernetes.client.models
     - kubernetes.config
     - kubernetes.watch
-  
+
 about:
   home: https://github.com/kubernetes-incubator/client-python
   license: Apache-2.0
-  summary: 'The official Kubernetes python client.'
+  summary: The official Kubernetes python client.
   license_family: APACHE
   license_file: LICENSE
   dev_url: https://github.com/kubernetes-incubator/client-python
