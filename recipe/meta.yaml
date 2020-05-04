@@ -10,7 +10,7 @@ source:
 
 build:
   number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
@@ -32,6 +32,10 @@ requirements:
     - adal >=1.0.2
 
 test:
+  requires:
+    - pip
+  commands:
+    - pip check
   imports:
     - kubernetes
     - kubernetes.client
