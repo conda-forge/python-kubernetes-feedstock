@@ -10,6 +10,7 @@ source:
 
 build:
   number: 1
+  noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -25,7 +26,6 @@ requirements:
     - urllib3 >=1.23
     - pyyaml >=3.12
     - google-auth >=1.0.1
-    - ipaddress >=1.0.17  # [py27]
     - websocket-client >=0.32.0,!=0.40.0,!=0.41.*,!=0.42.*
     - requests
     - requests-oauthlib
