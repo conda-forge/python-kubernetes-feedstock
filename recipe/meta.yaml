@@ -15,21 +15,20 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
   run:
-    - python
+    - python >=3.6
     - certifi >=14.05.14
-    - six >=1.9.0
-    - python-dateutil >=2.5.3
-    - setuptools >=21.0.0
-    - urllib3 >=1.23
-    - pyyaml >=3.12
     - google-auth >=1.0.1
-    - websocket-client >=0.32.0,!=0.40.0,!=0.41.*,!=0.42.*
+    - python-dateutil >=2.5.3
+    - pyyaml >=3.12
     - requests
     - requests-oauthlib
-    - adal >=1.0.2
+    - setuptools >=21.0.0
+    - six >=1.9.0
+    - urllib3 >=1.24.2
+    - websocket-client >=0.32.0,!=0.40.0,!=0.41.*,!=0.42.*
 
 test:
   requires:
