@@ -1,5 +1,5 @@
 provider:
   win: azure
 bot:
-  automerge: true
+  automerge: false
 conda_forge_output_validation: true
