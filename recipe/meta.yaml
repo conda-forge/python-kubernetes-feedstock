@@ -1,4 +1,4 @@
-{% set version = "27.2.0" %}
+{% set version = "28.1.0" %}
 
 package:
   name: python-kubernetes
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/k/kubernetes/kubernetes-{{ version }}.tar.gz
-  sha256: d479931c6f37561dbfdf28fc5f46384b1cb8b28f9db344ed4a232ce91990825a
+  sha256: 1468069a573430fb1cb5ad22876868f57977930f80a6749405da31cd6086a7e9
 
 build:
   number: 0
@@ -20,15 +20,15 @@ requirements:
   run:
     - python >=3.6
     - certifi >=14.05.14
-    - google-auth >=1.0.1
+    - six >=1.9.0
     - python-dateutil >=2.5.3
     - pyyaml >=5.4.1
+    - google-auth >=1.0.1
+    - websocket-client >=0.32.0,!=0.40.0,!=0.41.*,!=0.42.*
     - requests
     - requests-oauthlib
-    - setuptools >=21.0.0
-    - six >=1.9.0
-    - urllib3 >=1.24.2
-    - websocket-client >=0.32.0,!=0.40.0,!=0.41.*,!=0.42.*
+    - oauthlib >=3.2.2
+    - urllib3 >=1.24.2,<2.0
 
 test:
   requires:
