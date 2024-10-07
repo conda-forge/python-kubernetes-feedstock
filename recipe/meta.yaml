@@ -1,4 +1,4 @@
-{% set version = "30.1.0" %}
+{% set version = "31.0.0" %}
 
 package:
   name: python-kubernetes
@@ -6,19 +6,20 @@ package:
 
 source:
   url: https://pypi.io/packages/source/k/kubernetes/kubernetes-{{ version }}.tar.gz
-  sha256: 41e4c77af9f28e7a6c314e3bd06a8c6229ddd787cad684e0ab9f69b498e98ebc
+  sha256: 28945de906c8c259c1ebe62703b56a03b714049372196f854105afe4e6d014c0
 
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
+    - setuptools
     - pip
   run:
-    - python >=3.6
+    - python >=3.7
     - certifi >=14.05.14
     - six >=1.9.0
     - python-dateutil >=2.5.3
@@ -28,7 +29,8 @@ requirements:
     - requests
     - requests-oauthlib
     - oauthlib >=3.2.2
-    - urllib3 >=1.24.2,<2.0
+    - urllib3 >=1.24.2
+    - durationpy >=0.7
 
 test:
   requires:
