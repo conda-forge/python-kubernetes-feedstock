@@ -1,4 +1,4 @@
-{% set version = "33.1.0" %}
+{% set version = "34.1.0" %}
 
 package:
   name: python-kubernetes
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/k/kubernetes/kubernetes-{{ version }}.tar.gz
-  sha256: f64d829843a54c251061a8e7a14523b521f2dc5c896cf6d65ccf348648a88993
+  sha256: 8fe8edb0b5d290a2f3ac06596b23f87c658977d46b5f8df9d0f4ea83d0003912
 
 build:
   number: 0
@@ -28,8 +28,7 @@ requirements:
     - websocket-client >=0.32.0,!=0.40.0,!=0.41.*,!=0.42.*
     - requests
     - requests-oauthlib
-    - oauthlib >=3.2.2
-    - urllib3 >=1.24.2
+    - urllib3 >=1.24.2,<2.4.0
     - durationpy >=0.7
 
 test:
