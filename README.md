@@ -3,13 +3,11 @@ About python-kubernetes-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/python-kubernetes-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/kubernetes-incubator/client-python
+Home: https://github.com/kubernetes-client/python
 
 Package license: Apache-2.0
 
-Summary: The official Kubernetes python client.
-
-Development: https://github.com/kubernetes-incubator/client-python
+Summary: Kubernetes python client
 
 Current build status
 ====================
