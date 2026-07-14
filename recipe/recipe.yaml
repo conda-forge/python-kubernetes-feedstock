@@ -1,0 +1,55 @@
+schema_version: 1
+
+context:
+  version: "36.0.3"
+
+package:
+  name: python-kubernetes
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/k/kubernetes/kubernetes-${{ version }}.tar.gz
+  sha256: 36993ed25ce59b789c9341473a228fcf268504a2fec7c2b2b1531d73072e5ce7
+
+build:
+  number: 0
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - setuptools
+    - pip
+  run:
+    - python >=${{ python_min }}
+    - certifi >=14.05.14
+    - six >=1.9.0
+    - python-dateutil >=2.5.3
+    - pyyaml >=6.0.3
+    - websocket-client >=0.32.0,!=0.40.0,!=0.41.*,!=0.42.*
+    - requests
+    - requests-oauthlib
+    - urllib3 >=1.24.2,!=2.6.0
+    - durationpy >=0.7
+    - aiohttp <4.0.0,>=3.13.5
+
+tests:
+  - python:
+      imports:
+        - kubernetes
+      pip_check: true
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
+
+about:
+  summary: Kubernetes python client
+  license: Apache-2.0
+  license_file: LICENSE
+  homepage: https://github.com/kubernetes-client/python
+
+extra:
+  recipe-maintainers:
+    - johanneskoester
+    - ocefpaf
