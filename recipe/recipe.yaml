@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: 37.0.0
+  version: "37.0.1"
 
 package:
   name: python-kubernetes
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/k/kubernetes/kubernetes-${{ version }}.tar.gz
-  sha256: 60c6a7cb90627fcfff5610c61a79af55472f418f8c91ea5abdb5c851b466ae22
+  sha256: e41db0a95615c2388680a2d556df33fd0f27a5717c9b5df5857e475c196c2f10
 
 build:
   number: 0
