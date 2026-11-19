@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: 37.0.2
+  version: 37.0.3
 
 package:
   name: python-kubernetes
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/k/kubernetes/kubernetes-${{ version }}.tar.gz
-  sha256: 6967599ef976d0bb9c663c3621e690db0e26fbab7cf5c5e3ccf7e11b790d2de9
+  sha256: 862069ade8490916018a0a4e303050700f96f887edb5ec25db325a5212cb3923
 
 build:
   number: 0
@@ -24,7 +24,7 @@ requirements:
   run:
     - python >=${{ python_min }}
     - certifi >=14.05.14
-    - python-dateutil >=3.0.0
+    - python-dateutil >=2.8.2
     - pyyaml >=6.0.3
     - websocket-client >=0.32.0,!=0.40.0,!=0.41.*,!=0.42.*
     - requests
@@ -34,7 +34,6 @@ requirements:
     - aiohttp <4.0.0,>=3.14.5
     - pydantic >=2.14.2
     - typing_extensions >=4.16.0
-    - certifi >=2026.7.22
     - aiohttp-retry >=2.9.1
     - oauthlib >=4.0.0
     - certifi >=2024.7.4
